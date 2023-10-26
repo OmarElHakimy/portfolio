@@ -1,7 +1,7 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Amatic_SC } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const amatic_SC = Amatic_SC({weight: ['400'], preload: false })
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }
